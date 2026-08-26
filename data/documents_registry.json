@@ -1,0 +1,123 @@
+{
+  "a3c16c7b-e860-4559-986a-7c34a5a90c36": {
+    "doc_id": "a3c16c7b-e860-4559-986a-7c34a5a90c36",
+    "filename": "java playlist.pdf",
+    "file_type": "pdf",
+    "file_size_bytes": 218573,
+    "total_pages": 1,
+    "total_chunks": 1,
+    "created_at": "2026-08-25T10:56:42.623248+00:00",
+    "custom_metadata": {
+      "uploaded_by": "api_user"
+    }
+  },
+  "babeef0a-7a68-4ec3-88c5-4f4addd14b06": {
+    "doc_id": "babeef0a-7a68-4ec3-88c5-4f4addd14b06",
+    "filename": "Task_Assignment_Mobile_App_Development_Internship.pdf",
+    "file_type": "pdf",
+    "file_size_bytes": 164218,
+    "total_pages": 1,
+    "total_chunks": 1,
+    "created_at": "2026-08-25T10:56:45.012316+00:00",
+    "custom_metadata": {
+      "uploaded_by": "api_user"
+    }
+  },
+  "bad31298-8e94-4bdc-86ce-0088dd4c8dc6": {
+    "doc_id": "bad31298-8e94-4bdc-86ce-0088dd4c8dc6",
+    "filename": "30-Day_Java_Roadmap_Apna_College.pdf",
+    "file_type": "pdf",
+    "file_size_bytes": 2388,
+    "total_pages": 1,
+    "total_chunks": 1,
+    "created_at": "2026-08-25T18:06:08.183501+00:00",
+    "custom_metadata": {
+      "uploaded_by": "api_user"
+    }
+  },
+  "5a972d1f-9759-480e-a7cb-ecc076b17ebb": {
+    "doc_id": "5a972d1f-9759-480e-a7cb-ecc076b17ebb",
+    "filename": "30-Day_Java_Roadmap_Apna_College.pdf",
+    "file_type": "pdf",
+    "file_size_bytes": 2388,
+    "total_pages": 1,
+    "total_chunks": 1,
+    "created_at": "2026-08-25T18:11:06.166128+00:00",
+    "custom_metadata": {
+      "uploaded_by": "api_user"
+    }
+  },
+  "f0251ac0-538b-487b-8602-2e8be39f3bad": {
+    "doc_id": "f0251ac0-538b-487b-8602-2e8be39f3bad",
+    "filename": "StudyMate_AI_Project_Report (4).docx",
+    "file_type": "docx",
+    "file_size_bytes": 598454,
+    "total_pages": 77,
+    "total_chunks": 113,
+    "created_at": "2026-08-26T16:58:47.081060+00:00",
+    "custom_metadata": {
+      "uploaded_by": "api_user"
+    }
+  },
+  "4846ed50-2c3f-4018-8dee-be78fffb098c": {
+    "doc_id": "4846ed50-2c3f-4018-8dee-be78fffb098c",
+    "filename": "30-Day_Java_Roadmap_Attractive.pdf",
+    "file_type": "pdf",
+    "file_size_bytes": 2312,
+    "total_pages": 1,
+    "total_chunks": 1,
+    "created_at": "2026-08-26T16:58:54.563227+00:00",
+    "custom_metadata": {
+      "uploaded_by": "api_user"
+    }
+  },
+  "f81dc350-e32f-41f7-8c57-6a7f155c8aea": {
+    "doc_id": "f81dc350-e32f-41f7-8c57-6a7f155c8aea",
+    "filename": "StudyMate_AI_Project_Report (4).docx",
+    "file_type": "docx",
+    "file_size_bytes": 598454,
+    "total_pages": 77,
+    "total_chunks": 113,
+    "created_at": "2026-08-26T17:04:34.435428+00:00",
+    "custom_metadata": {
+      "uploaded_by": "api_user"
+    }
+  },
+  "5eeab343-9350-42d1-9a13-63b33703cb7c": {
+    "doc_id": "5eeab343-9350-42d1-9a13-63b33703cb7c",
+    "filename": "test_doc.md",
+    "file_type": "md",
+    "file_size_bytes": 90,
+    "total_pages": null,
+    "total_chunks": 1,
+    "created_at": "2026-08-26T17:19:16.063162+00:00",
+    "custom_metadata": {
+      "uploaded_by": "api_user"
+    }
+  },
+  "8d8dc0d1-7300-48ad-b944-32b42657e1ff": {
+    "doc_id": "8d8dc0d1-7300-48ad-b944-32b42657e1ff",
+    "filename": "web_Best_Private_University_in_Ballari,_Karn.html",
+    "file_type": "url",
+    "file_size_bytes": 15398,
+    "total_pages": 131,
+    "total_chunks": 144,
+    "created_at": "2026-08-26T17:21:49.463487+00:00",
+    "custom_metadata": {
+      "source_url": "https://www.kishkindauniversity.edu.in/",
+      "page_title": "Best Private University in Ballari, Karnataka | Kishkinda University"
+    }
+  },
+  "2d3684b6-59ab-4eed-80eb-b9ce9e4ae0b2": {
+    "doc_id": "2d3684b6-59ab-4eed-80eb-b9ce9e4ae0b2",
+    "filename": "OpenAI GPT-3 for developers.pdf",
+    "file_type": "pdf",
+    "file_size_bytes": 228324,
+    "total_pages": 1,
+    "total_chunks": 1,
+    "created_at": "2026-08-26T17:25:07.610614+00:00",
+    "custom_metadata": {
+      "uploaded_by": "api_user"
+    }
+  }
+}
