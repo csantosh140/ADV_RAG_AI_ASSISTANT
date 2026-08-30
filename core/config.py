@@ -24,7 +24,7 @@ class Settings(BaseSettings):
     LLM_TEMPERATURE: float = 0.0
 
     # Embeddings
-    EMBEDDING_PROVIDER: Literal["sentence-transformers", "openai", "mock"] = "sentence-transformers"
+    EMBEDDING_PROVIDER: Literal["sentence-transformers", "openai", "google", "mock"] = "sentence-transformers"
     EMBEDDING_MODEL_NAME: str = "sentence-transformers/all-MiniLM-L6-v2"
     EMBEDDING_DIMENSION: int = 384
 

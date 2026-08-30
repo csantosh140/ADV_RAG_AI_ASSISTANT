@@ -1,4 +1,4 @@
-"""Embedding service supporting SentenceTransformers, OpenAI, and lightweight offline mode."""
+"""Embedding service supporting SentenceTransformers, OpenAI, Google, and lightweight offline mode."""
 
 from typing import List
 import numpy as np
@@ -18,6 +18,20 @@ class EmbeddingService:
 
     def _init_provider(self):
         """Lazy load embedding models with graceful fallback."""
+        if self.provider == "google" and settings.GOOGLE_API_KEY:
+            try:
+                from langchain_google_genai import GoogleGenerativeAIEmbeddings
+                model = self.model_name if "embedding" in self.model_name else "models/text-embedding-004"
+                self._model = GoogleGenerativeAIEmbeddings(
+                    model=model,
+                    google_api_key=settings.GOOGLE_API_KEY,
+                )
+                self.dimension = 768  # text-embedding-004 output dimension
+                logger.info(f"Initialized Google Generative AI Embeddings ({model})")
+                return
+            except Exception as e:
+                logger.warning(f"Failed to init Google embeddings: {e}, falling back to local.")
+
         if self.provider == "openai" and settings.OPENAI_API_KEY:
             try:
                 from langchain_openai import OpenAIEmbeddings
@@ -62,7 +76,7 @@ class EmbeddingService:
         if not texts:
             return []
 
-        if self.provider == "openai" and hasattr(self._model, "embed_documents"):
+        if self.provider in ("openai", "google") and hasattr(self._model, "embed_documents"):
             return self._model.embed_documents(texts)
         elif self.provider == "sentence-transformers" and self._model is not None:
             embeddings = self._model.encode(texts, normalize_embeddings=True, show_progress_bar=False)
@@ -72,7 +86,7 @@ class EmbeddingService:
 
     def embed_query(self, query: str) -> List[float]:
         """Compute embedding for a single search query."""
-        if self.provider == "openai" and hasattr(self._model, "embed_query"):
+        if self.provider in ("openai", "google") and hasattr(self._model, "embed_query"):
             return self._model.embed_query(query)
         elif self.provider == "sentence-transformers" and self._model is not None:
             emb = self._model.encode(query, normalize_embeddings=True, show_progress_bar=False)
